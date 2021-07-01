@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" style="height:300%">
+
+<title>Résumé</title>
+
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
+	<link rel = "stylesheet" type = "text/css" href = "css/style.css">
+</head>
+
+<body>
+	<div id="Sidenav" class= "sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="padding: 0.5% 2% 2% 2%;">&times;</a>
+		<br><br><br>
+		<a href="../index.html">Home</a>
+		<a href="aboutme.html">About Me</a>
+		<a href="contact.html">Contact Me!</a>
+	</div>
+	<span style="font-size:400%;cursor:pointer" onclick="openNav()" class="menulogo">&#9776;</span>
+
+	<div class="AboutMeHeader">
+		<h1>My Résumé</h1>
+		<div class="AboutMeSubContent">
+			Feel free to either <a style="color:#BB87D2" href="files/NoahPinter_Résumé.pdf" download>download a PDF</a> of my résumé or view an abridged version by toggling the buttons below!
+			<br><br>
+			<button type="button" class="collapsible">Education</button>
+			<div class="collapsible_content">
+				<p><b>University of Michigan</b></p>
+				<ul>
+					<li>College of Literature, Science, and the Arts, Class of 2021</li>
+					<li>Computer Science B.S.</li>
+					<li>3.2 GPA</li>
+				</ul>
+				<p><b>Moon Area High School</b></p>
+				<ul>
+					<li>High Honors</li>
+				</ul>
+			</div>
+			<button type="button" class="collapsible">Work Experience</button>
+			<div class="collapsible_content">
+				<p><b>EECS 280 Instructional Aide @ the University of Michigan</b></p>
+				<ul>
+					<li>February 2020 - May 2021</li>
+					<li>Led a lab session of 30+ students, assisted students with their C++ projects and exam preparation at virtual and in-person office hours, and answered student questions on the online class forum, Piazza. Other responsibilities included grading exams, attending weekly staff meetings, and undergoing training on inclusive teaching.</li>
+					<li>I received a 4.9/5 rating on the end-of-semester feedback survey completed by my students.</li>
+				</ul>
+				<p><b>Quality Assurance Intern @ Little Caesars Enterprises</b></p>
+				<ul>
+					<li>May 2020 - August 2020</li>
+					<li>Completed a remote summer internship in Little Caesars Enterprises' Quality Assurance department, specifically working on the Mobile Testing Automation Team. Individually wrote Java code utilizing Selenium WebDriver and Appium technologies to automate 20 existing testing plans for the Little Caesars Android mobile application, eliminating the need for manual regressions. Other responsibilities included attending Scrum meetings and undergoing professional development training with fellow interns.</li>
+					<li>I received a 9/10 rating from my manager for my overall performance.</li>
+				</ul>
+			</div>
+			<button type="button" class="collapsible">Skills</button>
+			<div class="collapsible_content">
+				<p><b>Languages</b></p>
+				<ul>
+					<li>C, C++, Python, Java, HTML, CSS, Javascript</li>
+				</ul>
+				<p><b>IDEs / Misc. Technologies</b></p>
+				<ul>
+					<li>XCode, VSCode, Eclipse, Azure DevOps, Amazon Web Services (AWS)</li>
+				</ul>
+			</div>
+			<button type="button" class="collapsible">Awards</button>
+			<div class="collapsible_content">
+				<p><b>EECS 183 Showcase Grand Prize Winner</b></p>
+				<ul>
+					<li>Selected by representatives of JPMorgan Chase & Co. out of over 200 teams, my team won for our quiz-based web application hosted on Heroku that challenged users to identify popular songs. I was chiefly responsible front-end code.</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+<script>
+	
+function openNav() {
+	document.getElementById("Sidenav").style.width = "20%";
+}
+
+function closeNav() {
+	document.getElementById("Sidenav").style.width = "0";
+}
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

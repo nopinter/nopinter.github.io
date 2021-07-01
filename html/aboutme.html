@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" style="height:200%">
+
+<title>About Me</title>
+
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
+	<link rel = "stylesheet" type = "text/css" href = "css/style.css">
+</head>
+
+<body>
+	<div id="Sidenav" class= "sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="padding: 0.5% 2% 2% 2%;">&times;</a>
+		<br><br><br>
+		<a href="../index.html">Home</a>
+		<a href="resume.html">My Résumé</a>
+		<a href="contact.html">Contact Me!</a>
+	</div>
+<span style="font-size:400%;cursor:pointer" onclick="openNav()" class="menulogo">&#9776;</span>
+
+	<div class="AboutMeHeader">
+		<h1>About Me</h1>
+		<div class="AboutMeSubContent">
+			Hi! My name is Noah Pinter, and I'm a computer programmer and aspiring UI/UX designer originally from Pittsburgh, Pennsylvania. In May 2021, I received my Bachelor of Science Degree in computer science from the University of Michigan – Ann Arbor (go blue!). UI/UX design excites me because it combines the objectivity of coding with the opportunity to be creative. I hope this website effectively demonstrates that passion. I built it with HTML5, CSS, and Javascript.
+			<br><br>
+			Some of my other interests and hobbies include:
+			<br>
+			<ul>
+				<li style="font-family:'Trispace',sans-serif;">Singing</li>
+				<li style="font-family:'Trispace',sans-serif;">Health & Fitness</li>
+				<li style="font-family:'Trispace',sans-serif;">Environmentalism & Sustainability</li>
+				<li style="font-family:'Trispace',sans-serif;">Mental Health Awareness</li>
+				<li style="font-family:'Trispace',sans-serif;">Podcasting</li>
+			</ul>
+			<br>
+			<div class="gallery_row">
+				<div class="gallery_column">
+					<div class="container">
+						<img src="images/marchmadness.jpg" alt="March Madness" width="600" height="400">
+						<div class="overlay">
+							<div class="overlay_text">Seeing March Madness in Indianapolis, IN</div>
+						</div>
+					</div>
+				</div>
+				<div class="gallery_column" style>
+					<div class="container">
+						<img src="images/keuka.jpg" alt="Winery at Keuka Lake" width="600" height="400">
+						<div class="overlay">
+							<div class="overlay_text">At a winery near Keuka Lake, NY</div>
+					</div>
+				</div>
+			</div>
+			<div class="gallery_row">
+				<div class="gallery_column"><div class="container">
+					<img class="image" src="images/tahquamenon.jpg" alt="Tahquamenon Falls" width="600" height="400">
+					<div class="overlay">
+						<div class="overlay_text">Hiking in Tahquamenon Falls State Park, MI</div>
+					</div></div>
+				</div>
+				<div class="gallery_column"><div class="container">
+					<img src="images/DJs.jpg" alt="DJs A Cappella" width="600" height="400">
+					<div class="overlay">
+						<div class="overlay_text">My a cappella group, The DJs</div>
+					</div></div>
+				</div>
+			</div>
+
+			<!--
+			<button type="button" class="collapsible">Environmental Sustainability</button>
+			<div class="environmentalContent">
+			</div>
+			<br><br>
+			<button type="button" class="collapsible">Mental Health Awareness</button>
+			<div class="mentalHealthContent">
+			</div>
+			<br><br>
+			<button type="button" class="collapsible">Hobbies!</button>
+			<div class="hobbiesContent">
+			</div>
+		-->
+		</div>
+
+	</div>
+
+<script>
+	function openNav() {
+		document.getElementById("Sidenav").style.width = "20%";
+	}
+
+	function closeNav() {
+		document.getElementById("Sidenav").style.width = "0";
+	}
+</script>
+</body>
+</html>
